@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('b2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+form#loginForm{
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:linear-gradient(90deg,rgb(178, 175, 201), rgb(108, 108, 111) 35%,rgba(0,212,255,1) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form#profileForm{
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    background:linear-gradient(90deg,rgb(178, 175, 201), rgb(108, 108, 111) 35%,rgba(0,212,255,1) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+form input[type="email"],
+form input[type="text"],
+form input[type="password"],
+form input[type="date"],
+form textarea{
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+button#update,
+button#register,
+button#login{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button#update:hover,
+button#register:hover,
+button#login:hover{
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.custom-header {
+    color: white; /* Άσπρο χρώμα */
+    text-align: center; /* Κέντρο */
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+button#logout {
+    background-color: #dc3545; /* Κόκκινο για το logout */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button#logout:hover {
+    background-color: #c82333; /* Πιο σκούρο κόκκινο */
+}
